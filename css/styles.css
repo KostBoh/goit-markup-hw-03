@@ -1,4 +1,5 @@
 :root {
+    box-sizing: border-box;
     --main-font: Roboto;
     --accent-cl: #4D5AE5;
     --accent-hover-cl: #404BBF;
@@ -8,12 +9,54 @@
     --light-cl: #FFF;
 }
 
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
 /* base styles */
+
+
+
 body {
     font-family: Roboto, sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+lis
+ 
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
+
 .section-title {
         font-size: 36px;
         font-weight: 700;
@@ -42,19 +85,25 @@ body {
 }
 
 .list {
-    list-style: none;    
+    list-style: none; 
+    margin: 0;
+    padding: 0;   
 }
 .link {
     text-decoration: none;
     color: currentColor;
 }
 .button {
+    min-width: 69px;
+    min-height: 48px;
     font-family: inherit;
     cursor: pointer;
     color: currentColor;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border: 1px solid transparent ;
+    border-radius: 4px;
 }
 
 /* Header styles */
@@ -103,6 +152,8 @@ body {
 }
 
 .hero-title {
+    margin-bottom: 48px;
+    width: 496px;
     color: var(--light-cl);      
     font-size: 56px;        
     font-weight: 700;
@@ -116,6 +167,8 @@ body {
     letter-spacing: 0.04em;
     color:  var(--light-cl);
     background-color: var(--accent-cl);
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .button-accent:hover,
 .button-accent:focus {
@@ -124,6 +177,9 @@ body {
 .button-portfolio {
     color: var(--accent-cl);    
     background: #F4F4FD;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
 }
 .button-portfolio:hover,            
 .button-portfolio:focus {
@@ -153,11 +209,4 @@ body {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-/* Portfolio styles */
-
-.button-portfolio {
-    font-size: 16px;
-    letter-spacing: 0.04em;
 }
