@@ -299,13 +299,10 @@ button {
 .button-portfolio:focus {
   background-color: var(--accent-hover-cl);
   color: var(--light-cl);
+  border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
-/* .button-accent-container {
-  display: flex;
-} */
 
 /* Section styles */
 
@@ -335,28 +332,19 @@ button {
 }
 .footer-logo-accent {
   color: #f4f4fd;
-  
 }
 .footer-text {
   width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
 }
 .footer-logo {
   width: 115px;
   display: inline-block;
   margin-bottom: 16px;
 }
-/* .filter-container {
-  margin-top: 96px;
-  margin-bottom: 72px;
-  display: flex;
-  justify-content: center;
 
-  gap: 24px;
-} */
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -370,6 +358,7 @@ button {
 .project-card-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .team-card-content {
   padding-top: 32px;
