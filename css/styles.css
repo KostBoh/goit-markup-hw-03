@@ -334,7 +334,7 @@ button {
 }
 .footer-logo-accent {
   color: #f4f4fd;
-  display: inline-block;
+  
 }
 .footer-text {
   width: 264px;
@@ -345,7 +345,7 @@ button {
 }
 .footer-logo {
   width: 115px;
-  
+  display: inline-block;
   margin-bottom: 16px;
 }
 .filter-container {
