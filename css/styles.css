@@ -348,14 +348,14 @@ button {
   display: inline-block;
   margin-bottom: 16px;
 }
-.filter-container {
+/* .filter-container {
   margin-top: 96px;
   margin-bottom: 72px;
   display: flex;
   justify-content: center;
 
   gap: 24px;
-}
+} */
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -378,4 +378,14 @@ button {
   align-items: center;
   gap: 8px;
   padding-bottom: 32px;
+}
+.main-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
